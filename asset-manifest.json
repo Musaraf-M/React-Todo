@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/Musaraf-M/React-Todo/static/js/main.fbc48af4.chunk.js",
+    "main.js.map": "/Musaraf-M/React-Todo/static/js/main.fbc48af4.chunk.js.map",
+    "runtime-main.js": "/Musaraf-M/React-Todo/static/js/runtime-main.0cf114e2.js",
+    "runtime-main.js.map": "/Musaraf-M/React-Todo/static/js/runtime-main.0cf114e2.js.map",
+    "static/js/2.3abef9f6.chunk.js": "/Musaraf-M/React-Todo/static/js/2.3abef9f6.chunk.js",
+    "static/js/2.3abef9f6.chunk.js.map": "/Musaraf-M/React-Todo/static/js/2.3abef9f6.chunk.js.map",
+    "index.html": "/Musaraf-M/React-Todo/index.html",
+    "static/js/2.3abef9f6.chunk.js.LICENSE.txt": "/Musaraf-M/React-Todo/static/js/2.3abef9f6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0cf114e2.js",
+    "static/js/2.3abef9f6.chunk.js",
+    "static/js/main.fbc48af4.chunk.js"
+  ]
+}

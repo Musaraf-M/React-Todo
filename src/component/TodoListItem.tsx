@@ -1,21 +1,22 @@
+import { HStack, IconButton, Spacer, Text } from "@chakra-ui/react";
 import React from "react";
-import "./TodoListItem.css";
+
+import { FaTrash } from 'react-icons/fa';
 
 interface todoListItemProps {
   todo: Todo;
-  toggleTodo: ToggleTodo;
+
 }
 
 export const TodoListItem: React.FunctionComponent<todoListItemProps> = ({
   todo,
-  toggleTodo
+  
 }) => {
   return (
-    <div>
-      <label className={todo.complete ? "complete" : undefined}>
-        <input type='checkbox' checked={todo.complete} onChange={() => toggleTodo(todo)}/>
-        {todo.text}
-      </label>
-    </div>
+    <HStack>
+          <Text>{todo.text}</Text>
+          <Spacer />
+          <IconButton aria-label="Delete" icon={<FaTrash />} isRound={true} />
+    </HStack>
   );
 };

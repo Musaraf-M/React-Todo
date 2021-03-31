@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { AddTodoForm } from "./component/AddTodoForm";
 import { TodoList } from "./component/TodoList";
 
+import { Box, Container, Heading, VStack } from "@chakra-ui/react";
+
 const intialTodos: Array<Todo> = [
   { text: "walk the dog", complete: true },
   { text: "Write app", complete: false },
@@ -30,8 +32,19 @@ const App: React.FC = () => {
 
   return (
     <React.Fragment>
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <AddTodoForm addTodo={addTodo} />
+      <VStack spacing={0}>
+        <Heading
+          bgGradient='linear-gradient(to right, pink.800,pink.400,pink.200,blue.100)'
+          bgClip='text'
+          m='5'
+        >
+          Todo Application
+        </Heading>
+        <Container maxW='container.md' centerContent>
+          <TodoList todos={todos} toggleTodo={toggleTodo} />
+        </Container>
+        <AddTodoForm addTodo={addTodo} />
+      </VStack>
     </React.Fragment>
   );
 };

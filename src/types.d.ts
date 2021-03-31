@@ -6,3 +6,5 @@ type Todo = {
 
 
 type AddTodo = (newTodo: string) => void;
+
+type DeleteTodo = (newTodo: string) => void;

@@ -18,6 +18,13 @@ const App: React.FC = () => {
       setTodos([...todos, { text: newTodo, id: nanoid() }]);
   };
 
+  const deleteTodo: DeleteTodo = (id) => {
+    const newTodos = todos.filter((todos) => {
+      return todos.id !== id;
+    });
+    setTodos(newTodos);
+  }
+
   return (
     <React.Fragment>
       <VStack spacing={6}>
@@ -28,7 +35,7 @@ const App: React.FC = () => {
         >
           Todo Application
         </Heading>
-        <TodoList todos={todos} />
+        <TodoList todos={todos} deleteTodo={deleteTodo}/>
         <AddTodoForm addTodo={addTodo} />
       </VStack>
     </React.Fragment>
